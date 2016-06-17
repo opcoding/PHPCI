@@ -33,6 +33,13 @@
             "Tests\\PHPCI\\": "Tests/PHPCI/"
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/opcoding/courier.git",
+            "no-api": "true"
+        }
+    ],
 
     "require": {
         "php": ">=5.3.8",
@@ -51,7 +58,8 @@
         "pda/pheanstalk": "~3.1",
         "maknz/slack": "~1.7",
         "hipchat/hipchat-php": "~1.4",
-        "mremi/flowdock": "~1.0"
+        "mremi/flowdock": "~1.0",
+        "opcoding/courier": "dev-master"
     },
 
     "require-dev": {
