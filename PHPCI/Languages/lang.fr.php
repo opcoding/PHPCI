@@ -295,8 +295,11 @@ PHPCI',
     'stage_setup' => 'Préparation',
     'stage_test' => 'Test',
     'stage_complete' => 'Terminé',
-    'stage_success' => 'Succes',
+    'stage_success' => 'Succès',
     'stage_failure' => 'Échec',
+
+    // Courier
+    'courier' => 'OpCoding Deployer',
 
     // Installer
     'installation_url' => 'URL d\'installation de PHPCI',
@@ -406,5 +409,11 @@ PHPCI',
     'build_file_missing' => 'Le fichier de build spécifié n\'existe pas.',
     'property_file_missing' => 'Le fichier de propriété spécifié n\'existe pas.',
     'could_not_process_report' => 'Impossible de traiter le rapport généré par cet outil.',
-    'shell_not_enabled' => 'Le plugn shell n\'est pas activé. Merci de l\'activer via le fichier config.yml.'
+    'shell_not_enabled' => 'Le plugn shell n\'est pas activé. Merci de l\'activer via le fichier config.yml.',
+
+    // MISSING translations
+    'errors' => 'Erreurs',
+    'information' => 'Informations',
+    'high' => 'Haute'
+
 );
