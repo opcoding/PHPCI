@@ -205,6 +205,12 @@ class Builder implements LoggerAwareInterface
                 $success &= $this->pluginExecutor->executePlugins($this->config, $stage);
             }
 
+            if($success) {
+                $this->log('Deploying project...');
+                $success = $this->pluginExecutor->executePlugins($this->config, 'deploy');
+            }
+
+
             // Set the status so this can be used by complete, success and failure
             // stages.
             if ($success) {

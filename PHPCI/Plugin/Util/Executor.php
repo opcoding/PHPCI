@@ -151,12 +151,11 @@ class Executor
                     // If we're in the "setup" stage, execution should not continue after
                     // a plugin has failed:
                     throw new Exception('Plugin failed: ' . $plugin);
-                } elseif ($stage === 'test') {
-                    // If we're in the "test" stage and the plugin is not allowed to fail,
+                } else
+                    // If the plugin is not allowed to fail,
                     // then mark the build as failed:
                     if (empty($options['allow_failures'])) {
                         $success = false;
-                    }
                 }
             }
         }
